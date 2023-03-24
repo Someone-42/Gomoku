@@ -12,7 +12,7 @@ public class AccessLinkedListTest
         AccessLinkedList<int> a = new AccessLinkedList<int>(size);
         for (int i = 0; i < size; i++)
         {
-            a.values[i] = i;
+            a.Values[i] = i;
         }
         return a;
     }
@@ -23,7 +23,7 @@ public class AccessLinkedListTest
         int i = start;
         foreach(int j in a)
         {
-            if (arr[i] != a.values[j])
+            if (arr[i] != a.Values[j])
                 return false;
             i += step;
         }
@@ -36,7 +36,7 @@ public class AccessLinkedListTest
         int total = count ?? a.Count;
         foreach (int j in a)
         {
-            if (c != a.values[j])
+            if (c != a.Values[j])
                 return false;
             c += step;
             if (Math.Abs(c - start) > total)

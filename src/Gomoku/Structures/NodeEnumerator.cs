@@ -17,7 +17,7 @@ namespace Gomoku.Structures
         public int Next { get; protected set; }
         public T CurrentValue { get
             {
-                return List.values[Current];
+                return List.Values[Current];
             }
         }
 

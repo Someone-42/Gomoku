@@ -16,7 +16,7 @@ namespace Gomoku.Structures
     {
         public int Count { get; protected set; }
         public int Max;
-        public T[] values;
+        public T[] Values;
         public int First, Last;
         public Position[] nodes;
 
@@ -24,7 +24,7 @@ namespace Gomoku.Structures
         {
             Max = nodeCount;
             Count = Max;
-            values = new T[nodeCount];
+            Values = new T[nodeCount];
             nodes = new Position[nodeCount];
             First = 0;
             Last = nodeCount - 1;
@@ -57,7 +57,7 @@ namespace Gomoku.Structures
                 nodes[nodes[index].y].x = nodes[index].x;
             else if (index == Last)
                 Last = nodes[index].x;
-            return values[index];
+            return Values[index];
         }
 
         public void Push(int index)

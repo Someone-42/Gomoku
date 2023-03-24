@@ -44,7 +44,7 @@ namespace Gomoku.Players
             {
                 for (int j = 0; j < Game.Height; j++)
                 {
-                    positionList.values[IndexFromPosition(i, j)] = new Position(i, j);
+                    positionList.Values[IndexFromPosition(i, j)] = new Position(i, j);
                 }
             }
             PlayAI = playAI ?? _Play;
