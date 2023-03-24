@@ -1,0 +1,5 @@
+.vs
+src/Gomoku/bin/*
+src/Gomoku/obj/*
+src/GomokuTesting/bin/*
+src/GomokuTesting/obj/*
